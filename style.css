@@ -1,0 +1,94 @@
+:root{
+    --roxo1--: #4b1c71;
+    --roxo2--: #7f4ca5;
+    --roxo3--: #b57edc;
+    --roxo4--: #dbb6ee;
+    --roxo5--: #dbb6ee;
+}
+
+body{
+    font-family: "Kode Mono", monospace;
+    background-color: var(--roxo1--);
+    color: var(--roxo5--);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.caixaGeral{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+}
+
+.item{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#novaAtividade, #btn{
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+}
+
+#novaAtividade{
+    width: 20rem;
+    border-radius: 1.5rem;
+}
+
+#btnApagar, #btneditar, #btn{
+    border: none;
+    background-color: var(--roxo2--);
+    color: var(--roxo5--);
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    margin-top: auto;
+    cursor: pointer;
+    padding: 0.6rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+#btnApagar:hover, #btneditar:hover, #btn:hover{
+    background-color: var(--roxo3--);
+}
+
+#todo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#todo li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo li:hover{
+    background-color: var(--roxo2--);
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+#novaAtividade{
+
+    border: 0.1rem solid var(--roxo2--);
+    border-radius: 1rem;
+    padding: 8px;
+    background-color: var(--roxo5--);
+}
