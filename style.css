@@ -42,7 +42,7 @@ body{
     border-radius: 1.5rem;
 }
 
-#btnApagar, #btneditar, #btn{
+#btnApagar, #btneditar, #btn, #btnRiscar{
     border: none;
     background-color: var(--roxo2--);
     color: var(--roxo5--);
@@ -58,7 +58,7 @@ body{
     transition: .4s;
 }
 
-#btnApagar:hover, #btneditar:hover, #btn:hover{
+#btnApagar:hover, #btneditar:hover, #btn:hover, #btnRiscar:hover{
     background-color: var(--roxo3--);
 }
 
