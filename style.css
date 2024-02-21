@@ -16,6 +16,22 @@ body{
     gap: 4rem;
 }
 
+
+
+#container{
+    width: 43.75rem;
+}
+#todoli{
+    width: 37.5rem;
+}
+#butons{
+    display: flex;
+    width: 0.781rem;
+}
+#butons button{
+    margin: 0 0.625rem;
+}
+
 .caixaGeral{
     display: flex;
     flex-direction: column;
@@ -26,6 +42,7 @@ body{
 .item{
     display: flex;
     gap: 1rem;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -42,7 +59,7 @@ body{
     border-radius: 1.5rem;
 }
 
-#btnApagar, #btneditar, #btn, #btnRiscar{
+#btnApagar, #btnEditar, #btn, #btnRiscar{
     border: none;
     background-color: var(--roxo2--);
     color: var(--roxo5--);
@@ -58,7 +75,7 @@ body{
     transition: .4s;
 }
 
-#btnApagar:hover, #btneditar:hover, #btn:hover, #btnRiscar:hover{
+#btnApagar:hover, #btnEditar:hover, #btn:hover, #btnRiscar:hover{
     background-color: var(--roxo3--);
 }
 
@@ -81,7 +98,7 @@ body{
 #todo li:hover{
     background-color: var(--roxo2--);
     transition: .4s;
-    border-radius: 1rem;
+    border-radius: 1rem; 
     padding-left: 1rem;
 }
 
