@@ -7,7 +7,6 @@ let novaTarefa = () => {
     input.style.border = "1px solid red";
     alert("Você não digitou nada...");
   } else if (isExiste()) {
-    input.style.border = "1px solid red";
     alert("Já existe esse item na lista");
   } else {
     let values = JSON.parse(localStorage.getItem(localStorageNome) || "[]");
@@ -19,6 +18,9 @@ let novaTarefa = () => {
     localStorage.setItem(localStorageNome, JSON.stringify(values));
     mostraTela();
   }
+
+  input.value = "";
+  
   adicionarTarefa();
 };
 
